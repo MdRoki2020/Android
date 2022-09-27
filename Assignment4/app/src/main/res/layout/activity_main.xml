@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="#ddd"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Button"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Power"
+            android:paddingHorizontal="35dp"
+            android:textStyle="bold"
+            android:paddingVertical="4.5pt"
+            android:backgroundTint="#3b5998"
+            android:layout_marginTop="40dp"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingHorizontal="46dp"
+            android:paddingVertical="5dp"
+            android:background="#3b5998"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/power"
+            />
+
+
+        <Button
+            android:id="@+id/showimageId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Power"
+            android:textStyle="bold"
+            android:paddingVertical="5dp"
+            android:backgroundTint="#3b5998"
+            android:layout_marginTop="40dp"
+            android:drawableRight="@drawable/power"
+            android:layout_marginBottom="40dp"
+            />
+
+
+    </LinearLayout>
+
+
+
+    <ImageView
+        android:id="@+id/imageViewId"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:layout_margin="5dp"
+        android:contentDescription="Roki Image"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="If You Click On Third Button Then Shown Image"
+        android:textStyle="bold"
+        android:textColor="#404FA3"
+        android:layout_marginTop="18dp"
+        android:gravity="center"
+        android:textSize="17dp"
+        android:layout_marginBottom="40dp"
+        />
+
+</LinearLayout>
