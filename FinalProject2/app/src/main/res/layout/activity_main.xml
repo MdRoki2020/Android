@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="20dp"
+    android:background="#9C27B0"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:layout_width="369dp"
+            android:layout_height="200dp"
+            android:src="@drawable/usingphone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="17dp"
+        android:background="#E91E63"
+        >
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:gravity="center"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/signInEmailEditTextId"
+            android:textColorHint="#ffffff"
+            android:hint="Email"
+            android:textColor="#ffffff"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:id="@+id/signInPasswordEditTextId"
+            android:textColorHint="#ffffff"
+            android:hint="Password"
+            android:textColor="#ffffff"
+            />
+
+        <Button
+            android:id="@+id/signInButtonId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            style="@style/Base.Widget.AppCompat.Button.Colored"
+            android:text="Login"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:id="@+id/signUpTextViewId"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="Are You Not Register? SignUp"
+            />
+
+        <ProgressBar
+            android:id="@+id/progressBarId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/loadDataButtonId"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Food Cord"
+        />
+
+
+
+
+</LinearLayout>
