@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="10dp"
+    >
+
+    <EditText
+        android:id="@+id/editTextId1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter First Number"
+        />
+    <EditText
+        android:id="@+id/editTextId2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Second Number"
+        />
+    <Button
+        android:id="@+id/addBtnId"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="+"
+        />
+    <Button
+        android:id="@+id/subBtnId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="-"
+        />
+    <Button
+        android:id="@+id/mulBtnId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="*"
+        />
+    <Button
+        android:id="@+id/divBtnId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="/"
+        />
+    <TextView
+        android:id="@+id/resultId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Result: "
+        android:textSize="25dp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        />
+
+</LinearLayout>
