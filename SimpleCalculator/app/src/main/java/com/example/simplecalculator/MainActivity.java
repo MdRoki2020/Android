@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     private EditText etfirstvalue,etsecondvalue;
-    private Button btnadd,btnsubs,btnmultiply,btndivision;
+    private Button btnadd,btnsubs,btnmultiply,btndivision,btnAc;
     double num1,num2;
     private TextView tvresult;
 
@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
         btnsubs=findViewById(R.id.btnsubs);
         btnmultiply=findViewById(R.id.btnmultiply);
         btndivision=findViewById(R.id.btndivision);
+        btnAc=findViewById(R.id.Ac);
         tvresult=findViewById(R.id.tvresult);
         Clicklistener();
     }
@@ -67,6 +68,14 @@ public class MainActivity extends AppCompatActivity {
                 num2=Double.parseDouble(etsecondvalue.getText().toString());
                 Double result=num1/num2;
                 tvresult.setText(String.valueOf(result));
+            }
+        });
+
+        btnAc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                etfirstvalue.setText("");
+                etsecondvalue.setText("");
             }
         });
     }

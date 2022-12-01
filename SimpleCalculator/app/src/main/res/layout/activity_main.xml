@@ -6,34 +6,47 @@
     tools:context=".MainActivity"
     android:padding="10dp"
     android:orientation="vertical"
-    android:background="#C8DDDDDD"
+    android:background="#000000"
     >
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Calculator"
-        android:textSize="30dp"
-        android:textStyle="bold"
-        android:gravity="center"
-        android:layout_marginBottom="30dp"
-        />
+        android:orientation="vertical"
+        android:background="#7E7276"
+        android:paddingVertical="10dp"
+        android:padding="10dp"
+        >
 
-    <EditText
-        android:id="@+id/etfirstvalue"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Enter First Number"
-        android:inputType="numberDecimal"
-        />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calculator"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="30dp"
+            android:textColor="@color/white"
+            />
 
-    <EditText
-        android:id="@+id/etsecondvalue"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Enter Second Number"
-        android:inputType="numberDecimal"
-        />
+        <EditText
+            android:id="@+id/etfirstvalue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter First Number"
+            android:inputType="numberDecimal"
+            android:textColorHint="#ffffff"
+            />
+
+        <EditText
+            android:id="@+id/etsecondvalue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Second Number"
+            android:inputType="numberDecimal"
+            android:textColorHint="#ffffff"
+            />
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -46,7 +59,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="+"
-            android:layout_marginRight="17dp"
+            android:textStyle="bold"
+            android:backgroundTint="#E91E63"
+            android:layout_marginRight="12dp"
+            android:paddingVertical="20dp"
+            android:textSize="20dp"
             />
 
         <Button
@@ -54,7 +71,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="-"
-            android:layout_marginRight="17dp"
+            android:textStyle="bold"
+            android:backgroundTint="#E91E63"
+            android:layout_marginRight="12dp"
+            android:paddingVertical="20dp"
+            android:textSize="20dp"
             />
 
         <Button
@@ -62,7 +83,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="*"
-            android:layout_marginRight="17dp"
+            android:textStyle="bold"
+            android:backgroundTint="#E91E63"
+            android:layout_marginRight="12dp"
+            android:paddingVertical="20dp"
+            android:textSize="20dp"
             />
 
         <Button
@@ -70,27 +95,62 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="/"
-            android:layout_marginRight="17dp"
+            android:textStyle="bold"
+            android:backgroundTint="#E91E63"
+            android:paddingVertical="20dp"
+            android:textSize="20dp"
+            android:paddingHorizontal="27dp"
             />
 
 
     </LinearLayout>
+    <Button
+        android:id="@+id/Ac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AC"
+        android:textStyle="bold"
+        android:backgroundTint="#E91E63"
+        android:layout_marginRight="17dp"
+        android:paddingVertical="20dp"
+        android:textSize="20dp"
+        android:layout_marginBottom="40dp"
+        />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent"
+        android:background="#5D5E5E"
+        >
 
-
-        <TextView
-            android:id="@+id/tvresult"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Answer "
-            android:textStyle="bold"
-            android:textSize="25dp"
-            android:gravity="center"
-            android:layout_marginTop="25dp"
-        />
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Answer "
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:gravity="center"
+                android:layout_marginTop="25dp"
+                android:textColor="@color/white"
+                />
+
+            <TextView
+                android:id="@+id/tvresult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:gravity="center"
+                android:layout_marginTop="25dp"
+                android:textColor="@color/white"
+                />
+        </LinearLayout>
     </LinearLayout>
 
 
